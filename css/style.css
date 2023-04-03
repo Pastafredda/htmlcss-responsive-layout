@@ -8,18 +8,18 @@
 
 body{
     font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
 }
 
 /* Header */
 
 header{
     background-color: #4584FE;
-    position: fixed;
-    width: 100%;
+    margin-bottom: 60px;
 }
 
 .container{
-    max-width: 80%;
+    max-width: 90%;
     margin: auto;
     
 }
@@ -41,7 +41,7 @@ header{
     display: none;
 }
 
-.desktop-menu a{
+.button{
     text-decoration: none;
     color: black;
     background-color: white;
@@ -51,7 +51,7 @@ header{
 
 /* versione desktop */
 
-@media screen and (min-width:768px){
+@media screen and (min-width:1168px){
     .desktop-menu{
         flex-basis: 420px;
         list-style-type: none;
@@ -62,4 +62,117 @@ header{
     .mobile-menu{
         display: none;
     }
+}
+
+/* Inizio parte principale */
+
+.square{
+    background-color: #B5DDFE;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.demo{
+    padding: 20px;
+}
+
+
+h2{
+    color:#4584FE;
+}
+
+.demo .button{
+    background-color: #4584FE;
+    border-radius: 24px;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    padding: 10px;
+}
+
+.demo a{
+    color: white;
+}
+
+.demo p{
+    margin: 20px 0;
+}
+
+.dev-flex p{
+    color: #86A3BC;
+    font-weight: bold;
+    line-height: 24px;
+
+}
+
+.phone{
+    height: 300px;
+    text-align: center;
+}
+
+.phone img{
+    height: 100%;
+}
+
+.col{
+    text-align: center;
+    padding: 20px;
+}
+
+.col i{
+    color: #4584FE;
+    font-size: 60px;
+    padding: 10px;
+}
+
+col p{
+    margin: 0;
+}
+
+/* versione tablet */
+
+@media screen and (min-width:810px){
+
+    .dev-flex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .app{
+        width: 65%;
+    }
+
+    .phone{
+        text-align: left ;
+    }
+
+
+    .col{
+        width: calc(100%/3 - 10px);
+    }
+
+}
+/* Versione desktop */
+@media screen and (min-width:1168px){
+    .container{
+        max-width: 60%;
+        margin: auto;
+        font-size: 0.8rem;
+    }
+    .app{
+        display: flex;
+        align-items: end;
+    }
+
+    .demo{
+        align-self: flex-start;
+        width: 60%;
+    }
+
+    .phone{
+        height: 240px;
+    }
+
+ 
 }
