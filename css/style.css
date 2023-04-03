@@ -66,6 +66,7 @@ header{
 
 /* Inizio parte principale */
 
+/* Prima section */
 .square{
     background-color: #B5DDFE;
     border-radius: 30px;
@@ -77,7 +78,7 @@ header{
 }
 
 
-h2{
+.dev-flex h2{
     color:#4584FE;
 }
 
@@ -125,8 +126,8 @@ h2{
     padding: 10px;
 }
 
-col p{
-    margin: 0;
+.col h2{
+    margin: 10px 0;
 }
 
 /* versione tablet */
@@ -153,12 +154,14 @@ col p{
     }
 
 }
+
 /* Versione desktop */
+
 @media screen and (min-width:1168px){
     .container{
         max-width: 60%;
         margin: auto;
-        font-size: 0.8rem;
+        font-size: 0.9rem;
     }
     .app{
         display: flex;
@@ -173,6 +176,112 @@ col p{
     .phone{
         height: 240px;
     }
-
  
+}
+
+/* Section planning */
+
+.violet{
+    background-color:#9792E4;
+    padding-bottom: 40px;
+}
+
+
+.planning{
+    height: 300px;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.planning img{
+    max-height: 100%;
+}
+
+.strategic{
+    color: white;
+}
+
+.strategic h2{
+    margin-top: 80px;
+    margin-bottom: 40px;
+}
+
+.strategic p{
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.planning2{
+    width: 300px;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.planning2 img{
+    max-width:100% ;
+}
+
+.planning2 h2{
+    font-size: 18px;
+    margin:20px 0;
+}
+
+.planning2 p{
+    font-size: 14px;
+    font-style: italic;
+    line-height: 28px;
+    padding-bottom: 20px;
+}
+
+.fa-arrow-down{
+    background-color: #9792E4;
+    padding-top: 16px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+@media screen and (min-width:810px) and (max-width:1168px){
+   .violet h2{
+    font-size: 2.2em;
+   }
+
+   .planning{
+    height: 600px;
+   }
+
+   .planning2{
+    width: 600px;
+   }
+}
+
+@media screen and (min-width:1168px){
+    .flex-column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .flex-planning{
+        display: flex;
+    }
+
+    .strategic{
+        max-width: 300px;
+    }
+
+    .planning{
+        width: 450px;
+    }
+
+    .planning2{
+        margin-bottom: 30px;
+    }
+
+    .planning2 img{
+        max-width: 60%;
+    }
 }
