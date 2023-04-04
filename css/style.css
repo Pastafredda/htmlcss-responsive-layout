@@ -15,7 +15,9 @@ body{
 
 header{
     background-color: #4584FE;
-    margin-bottom: 60px;
+    position: fixed;
+    z-index: 900;
+    width: 100%;
 }
 
 .container{
@@ -72,6 +74,11 @@ header{
 /* Inizio parte principale */
 
 /* Prima section */
+
+.dev-flex{
+    padding-top: 120px;
+}
+
 .square{
     background-color: #B5DDFE;
     border-radius: 30px;
@@ -596,3 +603,28 @@ header{
     }
 }
 
+/* Footer */
+
+footer{
+    padding: 40px 0;
+    background-color: #333333;
+    text-align: center;
+}
+
+.footer{
+    max-width: 400px;
+    margin: auto;
+}
+
+.footer p, span{
+    color: white;
+    font-size: 14px;
+}
+
+.footer p{
+    margin-bottom: 50px;
+}
+
+.footer a{
+    color:#9792e4 ;
+}
