@@ -51,6 +51,7 @@ header{
     background-color: white;
     padding: 4px 8px;
     border-radius: 12px;
+    display: inline-block;
 }
 
 /* versione desktop */
@@ -89,7 +90,6 @@ header{
 .demo .button{
     background-color: #4584FE;
     border-radius: 24px;
-    display: inline-block;
     width: 200px;
     text-align: center;
     padding: 10px;
@@ -411,7 +411,6 @@ header{
 .cards .button{
     background-color: #9792e4;
     color: white;
-    display: inline-block;
     width: 140px;
     padding: 10px 0;
     border-radius: 30px;
@@ -443,6 +442,10 @@ header{
 }
 
 /* Sezione about us */
+
+.flex-about{
+    margin-bottom: 80px;
+}
 
 .about-us{
     margin-top: 60px;
@@ -491,7 +494,6 @@ header{
     background-color: #9792e4;
     color: white;
     padding: 4px 12px;
-    display: inline-block;
 }
 
 /* Versione tablet */
@@ -535,5 +537,62 @@ header{
 
 /* Sezione get started */
 
+.start{
+    text-align: center;
+}
 
+.start span{
+    color: rgb(226, 226, 226);
+}
+
+.start h3{
+    color: white;
+    font-size: 30px;
+    margin: 20px 0;
+}
+
+.start h2{
+    font-size: 54px;
+    color: #F3C05E;
+    margin-bottom: 20px;
+}
+
+.start p{
+    color: white;
+    font-size: 0.9rem;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.start a{
+    color: white;
+}
+
+.start .button{
+    color: #9792e4;
+    width: 220px;
+    padding: 10px;
+    border-radius: 30px;
+    margin-bottom: 20px;
+}
+
+.fa-circle{
+    font-size: 4px;
+}
+
+/* Versione tablet */
+
+@media screen and (min-width:810px){
+    .start h2, .start h3{
+        font-size: 3rem;
+    }
+
+    .start .button{
+        padding: 18px;
+    }
+    .start{
+        max-width: 500px;
+        margin: auto;
+    }
+}
 
