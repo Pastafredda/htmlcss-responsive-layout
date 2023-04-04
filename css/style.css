@@ -19,7 +19,7 @@ header{
 }
 
 .container{
-    max-width: 90%;
+    max-width: 80%;
     margin: auto;
     
 }
@@ -134,6 +134,11 @@ header{
 
 @media screen and (min-width:810px){
 
+    .container{
+        max-width: 90%;
+        margin: auto;
+    }
+
     .dev-flex{
         display: flex;
         flex-wrap: wrap;
@@ -183,14 +188,13 @@ header{
 
 .violet{
     background-color:#9792E4;
-    padding-bottom: 40px;
+    padding: 60px 0;
 }
 
 
 .planning{
     height: 300px;
     text-align: center;
-    padding-top: 50px;
 }
 
 .planning img{
@@ -288,6 +292,10 @@ header{
 
 /* Sezione testimonials */
 
+#testimonial{
+    margin-bottom: 80px;
+}
+
 .testimonal-header{
     text-align: center;
     margin-top: 50px;
@@ -301,7 +309,6 @@ header{
 
 .testimonal-header p{
     line-height: 30px;
-
 }
 
 .testimonials-col{
@@ -368,3 +375,69 @@ header{
 }
 
 /* Sezione benefits */
+
+#benefits{
+    text-align: center;
+    color: white;
+    font-size: 34px;
+    margin-bottom: 50px;
+}
+
+.cards{
+    background-color: white;
+    border-radius:24px;
+    padding: 30px;
+    margin-bottom: 30px;
+}
+
+.cards h2{
+    font-size:48px ;
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+
+.cards h3{
+    font-size: 22px;
+    color: #9792e4;
+    margin-bottom: 20px;
+}
+
+.cards p{
+    color: gray;
+    line-height: 28px;
+    margin-bottom: 30px;
+}
+
+.cards .button{
+    background-color: #9792e4;
+    color: white;
+    display: inline-block;
+    width: 140px;
+    padding: 10px 0;
+    border-radius: 30px;
+    text-align: center;
+    font-weight:bold; 
+}
+
+/* Versione tablet */
+
+@media screen and (min-width:810px){
+
+    .flex-cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .cards{
+        max-width: calc(100%/2 - 20px);
+    }
+}
+
+/* Versione desktop */
+
+@media screen and (min-width:1168px){
+    .cards{
+        max-width: calc(100%/3 - 20px);
+    }
+}
