@@ -245,7 +245,7 @@ header{
 
 .fa-arrow-down{
     background-color: #9792E4;
-    padding-top: 16px;
+    padding-top: 18px;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -259,10 +259,6 @@ header{
     font-size: 2.2em;
    }
 
-   .planning{
-    height: 600px;
-   }
-
    .planning2{
     width: 600px;
    }
@@ -273,7 +269,7 @@ header{
 @media screen and (min-width:1168px){
 
     .planning-col{
-        margin-left: 50px;
+        margin-left: 100px;
     }
 
     .strategic{
@@ -445,3 +441,99 @@ header{
         max-width: calc(100%/3 - 20px);
     }
 }
+
+/* Sezione about us */
+
+.about-us{
+    margin-top: 60px;
+}
+
+.about-us h2{
+    font-size: 44px;
+    color: #9792E4;
+    margin-bottom: 30px;
+
+}
+
+.about-us p{
+    line-height: 32px;
+    margin-top: 60px;
+}
+
+.about-image{
+    width: 0;
+    position: relative;
+}
+
+.about-image .fa-quote-left{
+    position: relative;
+    top: 60px;
+    left: 130px;
+    font-size: 70px;
+    color:#9792e4 ;
+}
+
+.about-image img{
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-profile h3{
+    color: #9792e4;
+    line-height: 32px;
+    font-size: 1.5em;
+    margin: 20px 0;
+}
+
+.about-profile .button{
+    background-color: #9792e4;
+    color: white;
+    padding: 4px 12px;
+    display: inline-block;
+}
+
+/* Versione tablet */
+
+@media screen and (min-width:810px){
+    .flex-about{
+        display: flex;
+        gap: 30px;
+    }
+
+    .about-profile{
+        margin-left: 20px;
+    }
+
+    .about-us{
+        margin-left: 30px;
+        max-width: 380px;
+    }
+
+    .about-us h2{
+        font-size: 3.6rem;
+    }
+    .about-image img{
+      width: 200px;
+      height: 200px;
+    }
+
+    .about-image .fa-quote-left{
+        top: 60px;
+        left: 150px;
+    }
+}
+
+/* Versione Desktop */
+
+@media screen and (min-width:1168px){
+    .about-us{
+        max-width: 600px;
+    }
+}
+
+/* Sezione get started */
+
+
+
